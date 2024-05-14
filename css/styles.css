@@ -105,6 +105,7 @@ HEADER Mobile
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px 0;
 }
 
 .menu-list,
@@ -114,7 +115,6 @@ HEADER Mobile
 
 .logo {
   display: block;
-  padding: 16px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -148,6 +148,9 @@ HEADER Tablet
 ======================================================================================================================================================== */
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0;
+  }
   .burger-open-btn {
     display: none;
   }
@@ -158,7 +161,6 @@ HEADER Tablet
   }
 
   .logo {
-    padding: 24px 0;
     margin-right: 120px;
   }
 
@@ -950,11 +952,11 @@ FOOTER Tablet
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
-    justify-content: center;
-    column-gap: 24px;
-    row-gap: 48px;
+    width: 584px;
+    flex-wrap: wrap;
   }
   .footer-content {
+    width: 264px;
     margin-right: 24px;
   }
   .footer-desc {
@@ -962,12 +964,20 @@ FOOTER Tablet
   }
   .social-links-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: start;
     width: 208px;
   }
   .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+  }
+  .footer-subscribe-desc {
+    display: inline-block;
+    text-align: left;
+  }
+  .subscribe-form {
+    flex-direction: row;
   }
   .subscribe-email {
     width: 264px;
@@ -982,6 +992,10 @@ FOOTER Desktop
   .page-footer {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .footer-container {
+    width: 100%;
+    flex-wrap: nowrap;
   }
 
   .footer-content {

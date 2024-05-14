@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-open-btn" type="button">
+        <button class="burger-open-btn" type="button" onclick="openMenu()">
           <svg
             class="burger-open-btn-icon"
             width="24"
@@ -675,7 +675,7 @@
         <div class="footer-subscribe">
           <p class="footer-subscribe-desc">Subscribe</p>
           <form class="subscribe-form">
-            <label class="footer-subscribe-desc">
+            <label class="footer-subscribe-label">
               <input
                 type="email"
                 class="subscribe-email"
@@ -827,12 +827,12 @@
 
     <!-- ==================== Mobile menu =============== -->
 
-    <div class="mobile-menu is-open">
+    <div class="mobile-menu" id="mobile-menu">
       <div>
         <button
           class="mobile-menu-close-btn"
           type="button"
-          onclick="closeMobileMenu()"
+          onclick="closeMenu()"
         >
           <svg
             class="mobile-menu-close-icon"
@@ -905,5 +905,16 @@
         </li>
       </ul>
     </div>
+    <script>
+      function openMenu() {
+        modal = document.getElementById("mobile-menu");
+        modal.classList.add("is-open");
+      }
+
+      function closeMenu() {
+        modal = document.getElementById("mobile-menu");
+        modal.classList.remove("is-open");
+      }
+    </script>
   </body>
 </html>
