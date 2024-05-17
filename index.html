@@ -166,10 +166,11 @@
             <li class="team-member-card">
               <img
                 srcset="
-                  ./images/our-team/team-mark-1@2x-min.jpg,
-                  ./images/our-team/team-mark-1@3x-min.jpg
+                  ./images/our-team/team-mark-min.jpg      1x,
+                  ./images/our-team/team-mark-1@2x-min.jpg 2x,
+                  ./images/our-team/team-mark-1@3x-min.jpg 3x
                 "
-                src="./images/our-team/team-mark-1-min.jpg"
+                src="./images/our-team/team-mark-min.jpg"
                 alt="Mark Guerrero avatar"
                 width="264"
                 height="260"
@@ -212,10 +213,11 @@
             <li class="team-member-card">
               <img
                 srcset="
-                  ./images/our-team/team-tom-2@2x-min.jpg,
-                  ./images/our-team/team-tom-2@3x-min.jpg
+                  ./images/our-team/team-tom-min.jpg      1x,
+                  ./images/our-team/team-tom-2@2x-min.jpg 2x,
+                  ./images/our-team/team-tom-2@3x-min.jpg 3x
                 "
-                src="./images/our-team/team-tom-2-min.jpg"
+                src="./images/our-team/team-tom-min.jpg"
                 alt="Tom Ford avatar"
                 width="264"
                 height="260"
@@ -258,10 +260,11 @@
             <li class="team-member-card">
               <img
                 srcset="
-                  ./images/our-team/team-camila-3@2x-min.jpg,
-                  ./images/our-team/team-camila-3@3x-min.jpg
+                  ./images/our-team/team-camila-min.jpg      1x,
+                  ./images/our-team/team-camila-3@2x-min.jpg 2x,
+                  ./images/our-team/team-camila-3@3x-min.jpg 3x
                 "
-                src="./images/our-team/team-camila-3-min.jpg"
+                src="./images/our-team/team-camila-min.jpg"
                 alt="Camila Garcia avatar"
                 width="264"
                 height="260"
@@ -304,10 +307,11 @@
             <li class="team-member-card">
               <img
                 srcset="
-                  ./images/our-team/team-daniel-4@2x-min.jpg,
-                  ./images/our-team/team-daniel-4@3x-min.jpg
+                  ./images/our-team/team-daniel-min.jpg      1x,
+                  ./images/our-team/team-daniel-4@2x-min.jpg 2x,
+                  ./images/our-team/team-daniel-4@3x-min.jpg 3x
                 "
-                src="./images/our-team/team-daniel-4-min.jpg"
+                src="./images/our-team/team-daniel-min.jpg"
                 alt="Daniel Wilson avatar"
                 width="264"
                 height="260"
@@ -804,10 +808,10 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <span> I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a></label
-            >
-          </div>
+              ></span>
+              </div>
           <button class="review-form-submit-btn" type="submit">Sent</button>
         </form>
       </div>
@@ -858,8 +862,8 @@
           </ul>
         </nav>
       </div>
-
-      <address class="mobile-address">
+    <div class="mobile-contacts">
+   <address class="mobile-address">
         <ul class="mobile-address-list">
           <li class="mobile-address-item">
             <a href="tel:+110001111111" class="mobile-address-menu-link color"
@@ -873,8 +877,10 @@
           </li>
         </ul>
       </address>
-
-      <ul class="mobile-social-link-list">
+    </div>
+      
+<div class="mobile-social-container">
+    <ul class="mobile-social-link-list">
         <li class="mobile-social-link-item">
           <a href="" class="mobile-social-link">
             <svg class="mobile-social-link-icon" width="24" height="24">
@@ -905,6 +911,7 @@
         </li>
       </ul>
     </div>
+  </div>
     <script>
       function openMenu() {
         modal = document.getElementById("mobile-menu");
